@@ -1,26 +1,47 @@
-function cook(food1, food2) {
-    console.log(food1 + 'を切ります。')
-    console.log(food1 + 'を炒めます。')
-    console.log(`${food2}をすりおろします。`)
-    console.log(`${food1}に${food2}を混ぜます。`)
+/*function double(x) {
+    return x * 2
+}*/
+
+/*const double = (x) => {
+    return x * 2
+}*/
+
+/*const double = x => {
+    return x * 2
+}*/
+
+/*const double = x => x * 2
+
+const doubleReturn = double(2)
+console.log(doubleReturn)*/
+
+
+/*
+ * var
+ */
+{
+    var a = 0;
 }
-cook('豚肉', '生姜')
+// ブロックスコープが適用されないため、ブロック外でも値の参照が可能
+console.log(a); // 0
 
-function foo(a, b, c) {
-    console.log(`fooが引数${a}, ${b}, ${c}で呼び出された`)
+
+/*
+ * let
+ */
+{
+    // ブロックスコープにより、再宣言にならない。
+    let a = 1;
+    console.log(a); // 1
 }
+// letはブロックスコープであり参照できないため、varで宣言した値が参照される。
+console.log(a); // 0
 
-foo(1, 'abc', 'true')
-
-function bar() {
-    console.log(`barが呼び出された`)
+/*
+ * const
+ */
+{
+    const b = 2;
+    console.log(b); //2
 }
-bar()
-
-function applyTax(price) {
-    const result = price * 0.1
-    return result
-}
-
-const tax = applyTax(12000)
-console.log(tax)
+console.log(b) // b is not defined 
