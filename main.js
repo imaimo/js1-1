@@ -1,9 +1,11 @@
-const num = Math.random() // 0.0〜1.0の数値をランダムに作る
-
-if (num >= 0.5) {
-    console.log('大きめ')
+if (true) {
+    console.log('必ずこちらが実行される')
 } else {
-    console.log('小さめ')
+    console.log('こちらは実行されない')
 }
 
-console.log(`数: ${num}`)
+if (false) {
+    console.log('今度はこちらが実行されない')
+} else {
+    console.log('こちらが実行される')
+}
