@@ -1,2 +1,9 @@
-const days = ['日', '月', '火', '水', '木', '金', '土']
-console.log(days.length)
+const nengou = ['明治', '大正', '昭和', '平成']
+nengou.push('令和')
+console.log(nengou)
+
+nengou.splice(3, 1)
+console.log(nengou)
+
+nengou[0] = 'あはは'
+console.log(nengou)
