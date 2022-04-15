@@ -1,9 +1,9 @@
-const nengou = ['明治', '大正', '昭和', '平成']
-nengou.push('令和')
-console.log(nengou)
+const num = Math.random() // 0.0〜1.0の数値をランダムに作る
 
-nengou.splice(3, 1)
-console.log(nengou)
+if (num >= 0.5) {
+    console.log('大きめ')
+} else {
+    console.log('小さめ')
+}
 
-nengou[0] = 'あはは'
-console.log(nengou)
+console.log(`数: ${num}`)
